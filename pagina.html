@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mundo dos Games</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+    .banner {
+      background-color: #4b2e83;
+      color: white;
+      text-align: center;
+      padding: 50px;
+    }
+    .conteudo {
+      width: 500px;
+      margin: 20px auto;
+    }
+    .imagem {
+      display: block;
+      margin: 20px auto;
+      width: 250px;
+      max-width: 100%;
+      height: auto;
+    }
+    h3 {
+      color: #4b2e83;
+    }
+    input, textarea, select {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+    input[type="radio"] {
+      width: auto;
+      margin-bottom: 0;
+    }
+    button {
+      padding: 8px 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <h1>Mundo dos Games</h1>
+    <p>Tudo sobre videogames em um só lugar</p>
+  </div>
+
+  <div class="conteudo">
+
+   <img src="https://static.vecteezy.com/system/resources/previews/029/338/050/non_2x/3d-joystick-on-a-transparent-background-free-png.png" alt="foto de controle" class="imagem">
+
+
+
+    <h2>Sobre os Games</h2>
+    <p>
+      Os videogames fazem parte da vida de muita gente. Eles servem para
+      se divertir, passar o tempo e até fazer amigos jogando online.
+    </p>
+
+    <h3>Como tudo começou</h3>
+    <p>
+      Os primeiros jogos eram bem simples, com poucos pixels e sons
+      básicos. Com o tempo, os gráficos ficaram cada vez mais realistas.
+    </p>
+
+    <h3>Tipos de jogos</h3>
+    <p>
+      Existem jogos de ação, aventura, corrida, esporte e muitos outros.
+      Cada pessoa pode encontrar o estilo que mais gosta.
+    </p>
+
+    <h2>Responda nossa pesquisa</h2>
+    <form>
+      <label>Nome:</label>
+      <input type="text">
+
+      <label>E-mail:</label>
+      <input type="email">
+
+      <label>Qual sua plataforma favorita?</label>
+      <select>
+        <option>Escolha uma opção</option>
+        <option>Celular</option>
+        <option>Computador</option>
+        <option>PlayStation</option>
+        <option>Xbox</option>
+        <option>Nintendo</option>
+      </select>
+
+      <label>Quanto tempo você joga por dia?</label><br>
+      <input type="radio" name="tempo"> Menos de 1 hora<br>
+      <input type="radio" name="tempo"> De 1 a 3 horas<br>
+      <input type="radio" name="tempo"> Mais de 3 horas<br><br>
+
+      <label>Qual tipo de jogo você gosta?</label><br>
+      <input type="checkbox"> Ação<br>
+      <input type="checkbox"> Aventura<br>
+      <input type="checkbox"> Corrida<br>
+      <input type="checkbox"> Esporte<br><br>
+
+      <label>Comentário:</label>
+      <textarea rows="4"></textarea>
+
+      <button>Enviar</button>
+    </form>
+  </div>
+
+</body>
+</html>
