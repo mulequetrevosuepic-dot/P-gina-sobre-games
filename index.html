@@ -2,112 +2,135 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Mundo dos Games</title>
   <style>
-    body {
-      font-family: Arial;
-      margin: 0;
-    }
-    .banner {
-      background-color: #4b2e83;
-      color: white;
-      text-align: center;
-      padding: 50px;
-    }
-    .conteudo {
-      width: 500px;
-      margin: 20px auto;
-    }
-    .imagem {
-      display: block;
-      margin: 20px auto;
-      width: 250px;
-      max-width: 100%;
-      height: auto;
-    }
-    h3 {
-      color: #4b2e83;
-    }
-    input, textarea, select {
-      width: 100%;
-      margin-bottom: 10px;
-      padding: 5px;
-    }
-    input[type="radio"] {
-      width: auto;
-      margin-bottom: 0;
-    }
-    button {
-      padding: 8px 16px;
-    }
+    :root { box-sizing: border-box; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+    body { font-family: 'Trebuchet MS', Verdana, sans-serif; margin: 0; background-color: #000; color: #eee; line-height: 1.6; }
+    h1, h2, h3 { font-family: Impact, 'Arial Black', sans-serif; font-weight: normal; letter-spacing: 1px; }
+    html { scroll-behavior: smooth; }
+    .menu { background-color: #2a1650; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 10; }
+    .menu a { color: white; text-decoration: none; margin: 0 12px; font-weight: bold; }
+    .menu a:hover { color: #ffd23f; }
+    .banner { background-color: #4b2e83; color: white; text-align: center; padding: 60px 20px; }
+    .banner h1 { font-size: 48px; margin: 0; }
+    .controle { font-size: 90px; margin: 0; }
+    .botao { display: inline-block; background-color: #ffd23f; color: #2a1650; padding: 12px 24px; border-radius: 10px; font-weight: bold; text-decoration: none; margin-top: 15px; }
+    .conteudo { max-width: 700px; margin: 0 auto; padding: 30px 20px; }
+    h2 { color: #b794f6; font-size: 32px; }
+    .cartao { background-color: #111; border: 2px solid #4b2e83; border-radius: 12px; padding: 15px; margin-bottom: 15px; }
+    .cartao h3 { margin: 0 0 5px 0; color: #ff5c9a; font-size: 22px; }
+    .formulario { background-color: #111; border: 2px solid #4b2e83; border-radius: 12px; padding: 20px; }
+    input, select, textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 2px solid #4b2e83; background-color: #000; color: white; border-radius: 8px; box-sizing: border-box; font-size: 16px; font-family: inherit; }
+    input[type="radio"], input[type="checkbox"] { width: auto; margin-bottom: 0; }
+    button { background-color: #4b2e83; color: white; border: none; padding: 12px 24px; border-radius: 10px; font-size: 16px; cursor: pointer; }
+    button:hover { background-color: #d6246e; }
+    .rodape { background-color: #2a1650; color: white; text-align: center; padding: 20px; }
   </style>
 </head>
 <body>
 
+  <!-- MENU -->
+  <div class="menu">
+    <a href="#sobre">Sobre</a>
+    <a href="#historia">História</a>
+    <a href="#tipos">Tipos</a>
+    <a href="#pesquisa">Pesquisa</a>
+  </div>
+
+  <!-- BANNER -->
   <div class="banner">
+    <p class="controle">🎮</p>
     <h1>Mundo dos Games</h1>
     <p>Tudo sobre videogames em um só lugar</p>
+    <a class="botao" href="#pesquisa">Responder a pesquisa</a>
   </div>
 
-  <div class="conteudo">
-
-   <img src="https://static.vecteezy.com/system/resources/previews/029/338/050/non_2x/3d-joystick-on-a-transparent-background-free-png.png" alt="foto de controle" class="imagem">
-
-
-
+  <!-- SOBRE -->
+  <div class="conteudo" id="sobre">
     <h2>Sobre os Games</h2>
-    <p>
-      Os videogames fazem parte da vida de muita gente. Eles servem para
-      se divertir, passar o tempo e até fazer amigos jogando online.
-    </p>
-
-    <h3>Como tudo começou</h3>
-    <p>
-      Os primeiros jogos eram bem simples, com poucos pixels e sons
-      básicos. Com o tempo, os gráficos ficaram cada vez mais realistas.
-    </p>
-
-    <h3>Tipos de jogos</h3>
-    <p>
-      Existem jogos de ação, aventura, corrida, esporte e muitos outros.
-      Cada pessoa pode encontrar o estilo que mais gosta.
-    </p>
-
-    <h2>Responda nossa pesquisa</h2>
-    <form>
-      <label>Nome:</label>
-      <input type="text">
-
-      <label>E-mail:</label>
-      <input type="email">
-
-      <label>Qual sua plataforma favorita?</label>
-      <select>
-        <option>Escolha uma opção</option>
-        <option>Celular</option>
-        <option>Computador</option>
-        <option>PlayStation</option>
-        <option>Xbox</option>
-        <option>Nintendo</option>
-      </select>
-
-      <label>Quanto tempo você joga por dia?</label><br>
-      <input type="radio" name="tempo"> Menos de 1 hora<br>
-      <input type="radio" name="tempo"> De 1 a 3 horas<br>
-      <input type="radio" name="tempo"> Mais de 3 horas<br><br>
-
-      <label>Qual tipo de jogo você gosta?</label><br>
-      <input type="checkbox"> Ação<br>
-      <input type="checkbox"> Aventura<br>
-      <input type="checkbox"> Corrida<br>
-      <input type="checkbox"> Esporte<br><br>
-
-      <label>Comentário:</label>
-      <textarea rows="4"></textarea>
-
-      <button>Enviar</button>
-    </form>
+    <p>Os videogames fazem parte da vida de muita gente. Eles servem para se divertir, passar o tempo e até fazer amigos jogando online.</p>
   </div>
+
+  <!-- HISTÓRIA -->
+  <div class="conteudo" id="historia">
+    <h2>Como tudo começou</h2>
+    <p>Os primeiros jogos eram bem simples, com poucos pixels e sons básicos. Com o tempo, os gráficos ficaram cada vez mais realistas.</p>
+    <ul>
+      <li><b>1958:</b> Tennis for Two, um jogo de tênis em um osciloscópio.</li>
+      <li><b>1972:</b> Pong, da Atari, vira sucesso nos fliperamas.</li>
+      <li><b>1985:</b> O Nintendo (NES) chega aos Estados Unidos.</li>
+      <li><b>1994:</b> O PlayStation traz os jogos em 3D.</li>
+      <li><b>Hoje:</b> Jogamos no celular, no computador e no console.</li>
+    </ul>
+  </div>
+
+  <!-- TIPOS DE JOGOS -->
+  <div class="conteudo" id="tipos">
+    <h2>Tipos de jogos</h2>
+    <p>Existem jogos de ação, aventura, corrida, esporte e muitos outros. Cada pessoa pode encontrar o estilo que mais gosta.</p>
+    <div class="cartao"><h3>⚔️ Ação</h3><p>Reflexos rápidos, lutas e muita adrenalina.</p></div>
+    <div class="cartao"><h3>🗺️ Aventura</h3><p>Explore mundos, resolva enigmas e viva uma história.</p></div>
+    <div class="cartao"><h3>🏎️ Corrida</h3><p>Velocidade e disputa até a linha de chegada.</p></div>
+    <div class="cartao"><h3>⚽ Esporte</h3><p>Futebol, basquete e outras modalidades na tela.</p></div>
+  </div>
+
+  <!-- PESQUISA -->
+  <div class="conteudo" id="pesquisa">
+    <h2>Responda nossa pesquisa</h2>
+    <div class="formulario">
+      <form>
+        <label>Nome:</label>
+        <input type="text" required>
+
+        <label>E-mail:</label>
+        <input type="email" required>
+
+        <label>Qual sua plataforma favorita?</label>
+        <select>
+          <option>Escolha uma opção</option>
+          <option>Celular</option>
+          <option>Computador</option>
+          <option>PlayStation</option>
+          <option>Xbox</option>
+          <option>Nintendo</option>
+        </select>
+
+        <label>Quanto tempo você joga por dia?</label><br>
+        <input type="radio" name="tempo"> Menos de 1 hora<br>
+        <input type="radio" name="tempo"> De 1 a 3 horas<br>
+        <input type="radio" name="tempo"> Mais de 3 horas<br><br>
+
+        <label>Qual tipo de jogo você gosta?</label><br>
+        <input type="checkbox"> Ação<br>
+        <input type="checkbox"> Aventura<br>
+        <input type="checkbox"> Corrida<br>
+        <input type="checkbox"> Esporte<br><br>
+
+        <label>Comentário:</label>
+        <textarea rows="4"></textarea>
+
+        <button>Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- RODAPÉ -->
+  <div class="rodape">
+    <p>Mundo dos Games - Feito para quem ama jogar</p>
+  </div>
+
+  <script>
+    // Quando clicar em um link do menu, a página desce até a seção
+    var links = document.querySelectorAll('a[href^="#"]');
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', function (e) {
+        e.preventDefault();
+        var id = this.getAttribute('href').substring(1);
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  </script>
 
 </body>
 </html>
